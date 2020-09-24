@@ -5,12 +5,20 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner input = new Scanner(System.in);
-        System.out.print("How old are you? ");
-        int age = Integer.parseInt(input.nextLine());
-        if(age >= 0 && age <= 120 ){
-            System.out.println("OK");
+        System.out.print("Type a year: ");
+        int year = Integer.parseInt(input.nextLine());
+        boolean leapyear = false;
+        if(year % 100 == 0){
+            if(year % 400 == 0){
+                leapyear = true;
+            }
+        } else if (year % 4 == 0){
+            leapyear = true;
+        }
+        if(leapyear){
+            System.out.println("The year is a leap year.");
         } else {
-            System.out.println("Impossible!");
+            System.out.println("The year is not a leap year.");
         }
     }
 }

@@ -4,12 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        // year  = 365 days
-        // day = 24 hours
-        // hour = 60 minutes
-        // minute = 60 seconds
-        int secondsInYear = 365 * 24 * 60 * 60;
-        System.out.printf("There are " + secondsInYear + " seconds in a year.");
-
+        Scanner input = new Scanner(System.in);
+        System.out.print("Type a number: ");
+        int numberOne = Integer.parseInt(input.nextLine());
+        System.out.print("Type another number: ");
+        int numberTwo = Integer.parseInt(input.nextLine());
+        double division = (double)numberOne / numberTwo;
+        System.out.println("Division: " + numberOne + " / " + numberTwo + " = " + division);
     }
 }

@@ -4,10 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 	    // write your code here
-        printText();
+        printStars(5);
+        printStars(3);
+        printStars(9);
     }
-    public static void printText() {
-        // write your code here
-        System.out.println("In the beginning there were the swamp, the hoe and Java.");
+    private static void printStars(int amount) {
+        int i = 0;
+        while(i < amount){
+            System.out.print("*");
+            i++;
+        }
+        System.out.println();
     }
 }

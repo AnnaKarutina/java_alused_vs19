@@ -4,20 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Scanner reader = new Scanner(System.in);
-        int sum = 0;
-        while (true) {
-            System.out.println("Insert the integer and press Enter");
-            int read = Integer.parseInt(reader.nextLine());
-            if (read == 0) {
-                break;
-            }
-
-            sum += read;
-
-            System.out.println("Sum now: " + sum);
+        int number = 1;
+        while(number <= 100){
+           if(number % 2 == 0){
+               System.out.println(number);
+           }
+           number++;
         }
-
-        System.out.println("Sum in the end: " + sum);
     }
 }

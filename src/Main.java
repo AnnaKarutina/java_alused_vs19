@@ -11,6 +11,8 @@ public class Main {
         printSquare(4);
         System.out.println();
         printRectangle(17,3);
+        System.out.println();
+        printTriangle(4);
     }
     private static void printStars(int amount) {
         int i = 0;
@@ -41,6 +43,18 @@ public class Main {
                 w++;
             }
             h++;
+            System.out.println();
+        }
+    }
+    private static void printTriangle(int size){
+        int row = 0;
+        while(row < size){
+            int width = 0;
+            while(width <= row){
+                System.out.print("*");
+                width++;
+            }
+            row++;
             System.out.println();
         }
     }

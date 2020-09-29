@@ -9,6 +9,8 @@ public class Main {
         printStars(9);
         System.out.println();
         printSquare(4);
+        System.out.println();
+        printRectangle(17,3);
     }
     private static void printStars(int amount) {
         int i = 0;
@@ -27,6 +29,18 @@ public class Main {
                 j++;
             }
             i++;
+            System.out.println();
+        }
+    }
+    private static void printRectangle(int width, int height){
+        int h = 0;
+        while(h < height){
+            int w = 0;
+            while(w < width){
+                System.out.print("*");
+                w++;
+            }
+            h++;
             System.out.println();
         }
     }

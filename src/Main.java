@@ -12,14 +12,16 @@ public class Main {
         Scanner input = new Scanner(System.in);
         System.out.println("Guess a number: ");
         int guess = Integer.parseInt(input.nextLine());
+        int guessCount = 1;
         while(number != guess){
             if(number > guess){
-                System.out.println("The number is greater");
+                System.out.println("The number is greater, guesses made: " + guessCount);
             } else if(number < guess){
-                System.out.println("The number is lesser");
+                System.out.println("The number is lesser, guesses made: " + guessCount);
             }
             System.out.println("Guess a number: ");
             guess = Integer.parseInt(input.nextLine());
+            guessCount++;
         }
         System.out.println("Congratulations, your guess is correct!");
 

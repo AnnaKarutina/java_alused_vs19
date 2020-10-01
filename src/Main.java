@@ -2,22 +2,16 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        int answer =  least(7, 2);
-        System.out.println("Least: " + answer);
+    public static double average(int number1, int number2, int number3, int number4) {
+        // write your code here
+        int sum = number1 + number2 + number3 + number4;
+        double average = (double)sum / 4;
+        return average;
     }
 
-    public static int least(int number1, int number2) {
-        // write program code here
-        int leastNumber;
-        if(number1 < number2){
-            leastNumber = number1;
-        } else if(number1 > number2){
-            leastNumber = number2;
-        } else{
-            leastNumber = number1;
-        }
-        // method needs a return in the end
-        return leastNumber;
+    public static void main(String[] args) {
+        double answer = average(4, 3, 6, 1);
+        System.out.println("average: " + answer);
     }
+
 }

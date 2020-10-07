@@ -9,23 +9,23 @@ public class Account {
 
     @Override
     public String toString() {
-        return owner + " balance: " + balance;
+        return this.owner + " balance: " + this.balance;
     }
 
     public void withdrawal(double amount){
-        balance = balance - amount; // balance -= amount;
+        this.balance = this.balance - amount; // balance -= amount;
     }
 
     public double balance(){
-        return balance;
+        return this.balance;
     }
 
     public void deposit(double amount){
-        balance = balance + amount;
+        this.balance = this.balance + amount;
     }
 
-    public void transfer(Account to, double amount){
-        withdrawal(amount);
-        to.deposit(amount);
+    public void transfer(Account otherAccount, double amount){
+        this.withdrawal(amount);
+        otherAccount.deposit(amount);
     }
 }

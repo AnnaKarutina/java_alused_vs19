@@ -23,4 +23,9 @@ public class Account {
     public void deposit(double amount){
         balance = balance + amount;
     }
+
+    public void transfer(Account to, double amount){
+        withdrawal(amount);
+        to.deposit(amount);
+    }
 }

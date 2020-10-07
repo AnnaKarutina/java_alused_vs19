@@ -10,7 +10,8 @@ public class Main {
          System.out.println(myAccount);
          System.out.println(mattAccount);
 
-         transfer(mattAccount, myAccount, 100);
+         // transfer(mattAccount, myAccount, 100);
+         mattAccount.transfer(myAccount, 100);
 
          System.out.println("Final state");
          System.out.println(myAccount);

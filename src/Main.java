@@ -3,22 +3,21 @@ import java.util.Scanner;
 public class Main {
 
      public static void main(String[] args) {
-         Scanner reader = new Scanner(System.in);
-         System.out.print("Type in your text: ");
-         String text = reader.nextLine();
-         System.out.println("In reverse order: " + reverse(text));
-    }
+         Account bartosAccount = new Account("Barto's account",100.00);
+         Account bartosSwissAccount = new Account("Barto's account in Switzerland",1000000.00);
 
-    public static String reverse(String text) {
-        // write your code here
-        String reverseText = "";
-        int i = text.length()-1;
-        while(i >= 0){
-            char symbol = text.charAt(i);
-            reverseText += symbol;
-            i--;
-        }
-        return reverseText;
+         System.out.println("Initial state");
+         System.out.println(bartosAccount);
+         System.out.println(bartosSwissAccount);
+
+         bartosAccount.withdrawal(20);
+         System.out.println("Barto's account balance is now: " + bartosAccount.balance());
+         bartosSwissAccount.deposit(200);
+         System.out.println("Barto's Swiss account balance is now: " + bartosSwissAccount.balance());
+
+         System.out.println("Final state");
+         System.out.println(bartosAccount);
+         System.out.println(bartosSwissAccount);
     }
 
 }

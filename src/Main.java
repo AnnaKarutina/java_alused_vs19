@@ -3,8 +3,15 @@ import java.util.Scanner;
 public class Main {
 
      public static void main(String[] args) {
-         Product product = new Product("Banana", 1.1, 13);
-         product.printProduct();
+         DecreasingCounter counter = new DecreasingCounter(10);
+
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
     }
 
 }

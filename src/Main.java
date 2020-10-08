@@ -3,21 +3,15 @@ import java.util.Scanner;
 public class Main {
 
      public static void main(String[] args) {
-         DecreasingCounter counter = new DecreasingCounter(100);
+         Menu cafee = new Menu();
+         cafee.addMeal("Hamburger");
+         cafee.addMeal("Fish'n'Chips");
+         cafee.addMeal("Sauerkraut");
 
-         counter.printValue();
+         cafee.printMeals();
 
-         counter.decrease();
-         counter.printValue();
+         cafee.clearMenu();
 
-         counter.decrease();
-         counter.printValue();
-
-         counter.reset();
-         counter.printValue();
-
-         counter.setInitial();
-         counter.printValue();
+         cafee.printMeals();
     }
-
 }

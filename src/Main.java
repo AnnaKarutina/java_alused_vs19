@@ -12,6 +12,33 @@ public class Main {
 
          counter.decrease();
          counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
+
+         counter.decrease();
+         counter.printValue();
     }
 
 }

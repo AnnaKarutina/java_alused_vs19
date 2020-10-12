@@ -2,12 +2,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
-        Person david = new Person("David", 31, 8, 2010);
-        Person jeva = new Person("Jeva", 1, 8, 2014);
+        int[] array = {5, 1, 3, 4, 2};
+        printElegantly(array);
+    }
 
-        System.out.println( david.getName() + " age " + david.age() + " years");
-        System.out.println( jeva.getName() + " age " + jeva.age() + " years");
+    public static void printElegantly(int[] array) {
+        // write code here
+        for(int i = 0; i < array.length; i++){
+            if(i < array.length - 1){
+                System.out.print(array[i] + ", ");
+            } else {
+                System.out.println(array[i]);
+            }
+        }
     }
 }

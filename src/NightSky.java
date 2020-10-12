@@ -33,4 +33,10 @@ public class NightSky {
         }
         System.out.println();
     }
+
+    public void print(){
+        for(int i = 0; i < this.height; i++){
+            this.printLine();
+        }
+    }
 }

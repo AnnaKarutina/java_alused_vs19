@@ -23,7 +23,7 @@ public class Library {
 
         for (Book book: this.library
              ) {
-            if(book.title().contains(title)){
+            if(StringUtils.included(book.title(), title)){
                 found.add(book);
             }
         }
@@ -35,7 +35,7 @@ public class Library {
 
         for (Book book: this.library
         ) {
-            if(book.publisher().contains(publisher)){
+            if(StringUtils.included(book.publisher(), publisher)){
                 found.add(book);
             }
         }

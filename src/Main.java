@@ -2,35 +2,18 @@ import java.util.Scanner;
 
 public class Main {
 
-     public static void main(String[] args) throws Exception {
-         Counter counter1 = new Counter(0, true);
-         Counter counter2 = new Counter(0);
-         Counter counter3 = new Counter(true);
-         Counter counter4 = new Counter();
+    public static void main(String[] args) {
+        CashRegister unicafeExactum = new CashRegister();
 
-         counter1.increase();
-         counter2.increase();
-         counter3.increase();
-         counter4.increase();
+        double theChange = unicafeExactum.payEconomical(10);
+        System.out.println("the change was " + theChange );
 
-         counter1.decrease();
-         counter2.decrease();
-         counter3.decrease();
-         counter4.decrease();
+        theChange = unicafeExactum.payEconomical(5);
+        System.out.println("the change was "  + theChange );
 
-         counter1.decrease();
-         counter2.decrease();
-         counter3.decrease();
-         counter4.decrease();
+        theChange = unicafeExactum.payGourmet(4);
+        System.out.println("the change was "  + theChange );
 
-         counter1.decrease(10);
-         counter2.decrease(10);
-         counter3.decrease(10);
-         counter4.decrease(10);
-
-         System.out.println(counter1);
-         System.out.println(counter2);
-         System.out.println(counter3);
-         System.out.println(counter4);
-     }
+        System.out.println( unicafeExactum );
+    }
 }

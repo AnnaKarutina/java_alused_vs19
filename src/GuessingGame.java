@@ -42,4 +42,10 @@ public class GuessingGame {
             return false;
         }
     }
+
+    public int average(int firstNumber, int secondNumber){
+        double average = (double)(firstNumber + secondNumber) / 2;
+        average = Math.floor(average);
+        return (int)average;
+    }
 }

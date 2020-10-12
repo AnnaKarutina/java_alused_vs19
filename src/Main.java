@@ -4,13 +4,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Clock clock = new Clock(23, 59, 50);
+        Person david = new Person("David", 31, 8, 2010);
+        Person jeva = new Person("Jeva", 1, 8, 2014);
 
-        int i = 0;
-        while( i < 20) {
-            System.out.println( clock );
-            clock.tick();
-            i++;
-        }
+        System.out.println( david.getName() + " age " + david.age() + " years");
+        System.out.println( jeva.getName() + " age " + jeva.age() + " years");
     }
 }
